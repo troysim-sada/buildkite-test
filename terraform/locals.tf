@@ -5,3 +5,4 @@ locals {
   network_subnet  = "192.16.8.1.1/24"
   #gcp_auth_file = "" // uncomment this if you have the authorization file
 }
+
