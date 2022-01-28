@@ -29,4 +29,3 @@ resource "google_compute_subnetwork" "network_subnet" {
 output "gcp_vpc_network_name" {
   value = google_compute_network.vpc.id
 }
-
