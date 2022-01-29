@@ -3,4 +3,6 @@ steps:
     plugins:
       - echoboomer/terraform#v1.2.26:
           apply_master: true
+          init_args:
+            - "-input=false"
           version: 1.0.6
