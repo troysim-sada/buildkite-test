@@ -8,3 +8,4 @@ steps:
     artifact_paths:
       - "terraform/*"
     concurrency: 1
+    concurrency_group: foobar/ops/terraform
