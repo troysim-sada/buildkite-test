@@ -1,11 +1,6 @@
 steps:
-  - label: ":terraform: :thinking_face: planning"
-    commands: |
-      cd terraform
-      terraform validate
-      terraform init
-      terraform plan -out plan.tf
-    artifact_paths:
-      - "terraform/*"
-    concurrency: 1
-    concurrency_group: terraform/
+  - label: "terraform"
+    plugins:
+      - echoboomer/terraform#v1.2.26:
+          apply_master: true
+          version: 1.0.6
